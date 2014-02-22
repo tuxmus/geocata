@@ -1,0 +1,10 @@
+Les données sont fournies en lambert 1
+Quand on géoréférence en lambert 1 dans un SIG, les données se retrouvent aux baléares.
+Cela est du au fait que 1000000 a été rajouté en y par convention (nouveau lambert 1?), et que l'on géoréférence dans le mauvais Lambert 1
+
+Pour chaque raster : 
+
+- un nouveau raster est créé en Lambert 1 carto (EPSG:27571) avec les coordonnées translatées d'1 million en y. Ces rasters sont dans le dossier 27571
+
+- on reprojette ce raster en ESPG:3857, projection idéale pour le web mapping
+
