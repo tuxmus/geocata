@@ -9,15 +9,16 @@ import shutil
 def createSubDirectories(rasterDirectory, *subFolderToCreate):
 
     for subDir in subFolderToCreate:
-        folderToCreate = rasterDirectory+subDir
+        folderToCreate = os.path.join(rasterDirectory,subDir)
+        print folderToCreate
         if(os.path.exists(folderToCreate)):
-            print "\n---Folder "+folderToCreate+" exists---"
+            print "\nFolder "+folderToCreate+" exists"
             #erase non empty directories
             shutil.rmtree(folderToCreate)
-            print "---Delete "+folderToCreate+" ---"
+            print "Delete "+folderToCreate
         
         os.mkdir(folderToCreate)
-        print "--- "+folderToCreate+"created ---\n"
+        print folderToCreate+" created\n"
 
 
 # usage : python test.py rasterDirectory
@@ -32,7 +33,7 @@ if __name__ == '__main__':
     epsgWebMapping = "3857"
     
     createSubDirectories(rasterDirectory, epsgLambert1, epsgWebMapping)
-
+    
     #list all files in the directory
     rasterDirectoryFiles = os.listdir(rasterDirectory);
     
@@ -87,9 +88,9 @@ if __name__ == '__main__':
 
                 print "//// GEOREF 27571 - Fix Lambert 1 coordinates (+1.000.000 en y) ////"
                 os.system("gdal_translate -of Gtiff -co COMPRESS=LZW -a_srs EPSG:27571 -a_ullr "+str(xOrigin)+" "+str(yOrigin+1000000)+" "+str(xOrigin+dx)+" "+str(yOrigin+dy+1000000)+" "+filepath+" "+lambertFile)
-
+                
                 print "//// REPROJECT 3857 ////"
                 os.system("gdalwarp -of Gtiff -co COMPRESS=LZW -s_srs EPSG:27571 -t_srs EPSG:3857 "+lambertFile+" "+mappingFile)
+    
+
                 
-    
-    
