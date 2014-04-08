@@ -63,12 +63,11 @@ if __name__ == '__main__':
         yLowerRightCurrent = yTopLeftCurrent-hauteurPlanche
 
         print "coords 27571 : topLeft "+str(xTopLeftCurrent)+" "+str(yTopLeftCurrent)+" lowerRight "+str(xLowerRightCurrent)+" "+str(yLowerRightCurrent)
-        print "*georeferencing...*"
+        print "*georeferencing 27571...*"
         #print "gdal_translate -of Gtiff -co COMPRESS=JPEG -a_srs EPSG:27571 -a_ullr "+str(xTopLeftCurrent)+' '+str(yTopLeftCurrent)+' '+str(xLowerRightCurrent)+' '+str(yLowerRightCurrent)+' '+rasterDirectory+os.sep+tif+' '+rasterDirectory3857+os.sep+tif
-        os.system("gdal_translate -of Gtiff -co COMPRESS=JPEG -a_srs EPSG:27571 -a_ullr "+str(xTopLeftCurrent)+' '+str(yTopLeftCurrent)+' '+str(xLowerRightCurrent)+' '+str(yLowerRightCurrent)+' '+rasterDirectory+os.sep+tif+' '+rasterDirectory3857+os.sep+tif)
-      
-
+        os.system("gdal_translate -of Gtiff -co COMPRESS=JPEG -a_srs EPSG:27571 -a_ullr "+str(xTopLeftCurrent)+' '+str(yTopLeftCurrent)+' '+str(xLowerRightCurrent)+' '+str(yLowerRightCurrent)+' '+rasterDirectory+os.sep+tif+' '+rasterDirectory27571+os.sep+tif)
+       
+        print "*reprojecting 3857...*"
+        os.system("gdalwarp -of Gtiff -co COMPRESS=JPEG -s_srs EPSG:27571 -t_srs EPSG:3857 "+rasterDirectory27571+os.sep+tif+' '+rasterDirectory3857+os.sep+tif)
         
-
-        
-
+   
