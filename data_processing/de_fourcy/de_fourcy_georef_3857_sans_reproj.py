@@ -46,6 +46,8 @@ if __name__ == '__main__':
     fourcy_10_name = "P10_To_gr.tif"
     fourcy_11_name = "P11_To_gr.tif"
     fourcy_12_name = "P12_To_gr.tif"
+    fourcy_13_name = "P13_To_gr.tif"
+    fourcy_14_name = "P14_To_gr.tif"
 
 
     # liste de liste de tuples; ou chaque liste de tuple correspond à une planche de l'atlas de fourcy, sur cette base [ (coord Upper Left), (coord Lower Right)]
@@ -60,6 +62,12 @@ if __name__ == '__main__':
 
     fourcy_12_27571 = [fourcy_12_name, (600000, 1126224), (601000, 1125624)]
     fourcys_27571.append(fourcy_12_27571)
+
+    fourcy_13_27571 = [fourcy_13_name, (599000, 1128024), (600000, 1127424)]
+    fourcys_27571.append(fourcy_13_27571)
+
+    fourcy_14_27571 = [fourcy_14_name, (599000,1126824), (600000, 1126824)]
+    fourcys_27571.append(fourcy_14_27571)
 
     for planche in fourcys_27571:
         name_planche = planche[0]
