@@ -66,7 +66,7 @@ if __name__ == '__main__':
     fourcy_13_27571 = [fourcy_13_name, (599000, 1128024), (600000, 1127424)]
     fourcys_27571.append(fourcy_13_27571)
 
-    fourcy_14_27571 = [fourcy_14_name, (599000,1126824), (600000, 1126824)]
+    fourcy_14_27571 = [fourcy_14_name, (599000,1127424), (600000, 1126824)]
     fourcys_27571.append(fourcy_14_27571)
 
     for planche in fourcys_27571:
