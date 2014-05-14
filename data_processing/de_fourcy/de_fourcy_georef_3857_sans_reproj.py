@@ -77,7 +77,7 @@ if __name__ == '__main__':
     fourcy_15_27571 = [fourcy_15_name, (599000, 1126824), (600000, 1126224)]
     fourcys_27571.append(fourcy_15_27571)
 
-    fourcy_16_27571 = [fourcy_16_name, (599000, 1126224), (599000, 1125624)]
+    fourcy_16_27571 = [fourcy_16_name, (599000, 1126224), (600000, 1125624)]
     fourcys_27571.append(fourcy_16_27571)
 
 
