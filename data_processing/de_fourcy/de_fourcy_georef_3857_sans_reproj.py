@@ -52,6 +52,19 @@ if __name__ == '__main__':
     fourcy_16_name = "P16_To_gr.tif"
 
 
+    # NOUVEAU DU 16.05.2014
+     fourcy_17_name = "P17_To_gr.tif"  
+     fourcy_18_name = "P18_To_gr.tif" 
+     fourcy_05_name = "P05_To_gr.tif" 
+     fourcy_06_name = "P06_To_gr.tif" 
+     fourcy_07_name = "P07_To_gr.tif" 
+     fourcy_08_name = "P08_To_gr.tif" 
+     fourcy_19_name = "P19_To_gr.tif" 
+     fourcy_20_name = "P20_To_gr.tif" 
+     fourcy_21_name = "P21_To_gr.tif" 
+     fourcy_00_name = "P00_To_gr.tif" # index de fourcy 
+
+
     # liste de liste de tuples; ou chaque liste de tuple correspond à une planche de l'atlas de fourcy, sur cette base [ (coord Upper Left), (coord Lower Right)]
     fourcys_27571 = [];
     fourcys_3857 = [];
@@ -79,6 +92,39 @@ if __name__ == '__main__':
 
     fourcy_16_27571 = [fourcy_16_name, (599000, 1126224), (600000, 1125624)]
     fourcys_27571.append(fourcy_16_27571)
+
+    # NOUVEAU 16.05.2014
+
+    fourcy_17_27571 =  [fourcy_17_name, (598000, 1127424, (599000, 1126824]   
+    fourcys_27571.append(fourcy_17_27571)
+
+    fourcy_18_27571 =  [fourcy_18_name, (598000, 1126824), (599000, 1126224)]   
+    fourcys_27571.append(fourcy_18_27571)
+
+    fourcy_05_27571 =  [fourcy_05_name, (601000, 1127424), (602000, 1126824)]   
+    fourcys_27571.append(fourcy_05_27571)
+
+    fourcy_06_27571 =  [fourcy_06_name, (601000, 1126824), (602000, 1126224)]   
+    fourcys_27571.append(fourcy_06_27571)
+
+    fourcy_07_27571 =  [fourcy_07_name, (601000,  1126224), (602000, 1125624)]   
+    fourcys_27571.append(fourcy_07_27571)
+
+    fourcy_08_27571 =  [fourcy_08_name, (601000, 1125624), (602000, 1126024)]   
+    fourcys_27571.append(fourcy_08_27571)
+
+    fourcy_19_27571 =  [fourcy_19_name, (597000, 1129824), (598000, 1129224)]   
+    fourcys_27571.append(fourcy_19_27571)
+
+    fourcy_20_27571 =  [fourcy_20_name, (596000, 1129824), (597000, 1129224)]   
+    fourcys_27571.append(fourcy_20_27571)
+
+    fourcy_21_27571 =  [fourcy_21_name, (596000, 1129224), (597000, 1128624)]   
+    fourcys_27571.append(fourcy_21_27571)
+
+    fourcy_00_27571 =  [fourcy_00_name, (596000, 1129824), (602000, 1126024)]   
+    fourcys_27571.append(fourcy_00_27571)
+
 
 
 
