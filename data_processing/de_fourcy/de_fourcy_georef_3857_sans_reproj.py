@@ -53,16 +53,16 @@ if __name__ == '__main__':
 
 
     # NOUVEAU DU 16.05.2014
-     fourcy_17_name = "P17_To_gr.tif"  
-     fourcy_18_name = "P18_To_gr.tif" 
-     fourcy_05_name = "P05_To_gr.tif" 
-     fourcy_06_name = "P06_To_gr.tif" 
-     fourcy_07_name = "P07_To_gr.tif" 
-     fourcy_08_name = "P08_To_gr.tif" 
-     fourcy_19_name = "P19_To_gr.tif" 
-     fourcy_20_name = "P20_To_gr.tif" 
-     fourcy_21_name = "P21_To_gr.tif" 
-     fourcy_00_name = "P00_To_gr.tif" # index de fourcy 
+    fourcy_17_name = "P17_To_gr.tif"  
+    fourcy_18_name = "P18_To_gr.tif" 
+    fourcy_05_name = "P05_To_gr.tif" 
+    fourcy_06_name = "P06_To_gr.tif" 
+    fourcy_07_name = "P07_To_gr.tif" 
+    fourcy_08_name = "P08_To_gr.tif" 
+    fourcy_19_name = "P19_To_gr.tif" 
+    fourcy_20_name = "P20_To_gr.tif" 
+    fourcy_21_name = "P21_To_gr.tif" 
+    fourcy_00_name = "P00_To_gr.tif" # index de fourcy 
 
 
     # liste de liste de tuples; ou chaque liste de tuple correspond à une planche de l'atlas de fourcy, sur cette base [ (coord Upper Left), (coord Lower Right)]
@@ -95,7 +95,7 @@ if __name__ == '__main__':
 
     # NOUVEAU 16.05.2014
 
-    fourcy_17_27571 =  [fourcy_17_name, (598000, 1127424, (599000, 1126824]   
+    fourcy_17_27571 =  [fourcy_17_name, (598000, 1127424), (599000, 1126824)]   
     fourcys_27571.append(fourcy_17_27571)
 
     fourcy_18_27571 =  [fourcy_18_name, (598000, 1126824), (599000, 1126224)]   
