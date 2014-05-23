@@ -110,7 +110,7 @@ if __name__ == '__main__':
     fourcy_07_27571 =  [fourcy_07_name, (601000,  1126224), (602000, 1125624)]   
     fourcys_27571.append(fourcy_07_27571)
 
-    fourcy_08_27571 =  [fourcy_08_name, (601000, 1125624), (602000, 1126024)]   
+    fourcy_08_27571 =  [fourcy_08_name, (601000, 1125624), (602000, 1125024)]   
     fourcys_27571.append(fourcy_08_27571)
 
     fourcy_19_27571 =  [fourcy_19_name, (597000, 1129824), (598000, 1129224)]   
@@ -122,7 +122,7 @@ if __name__ == '__main__':
     fourcy_21_27571 =  [fourcy_21_name, (596000, 1129224), (597000, 1128624)]   
     fourcys_27571.append(fourcy_21_27571)
 
-    fourcy_00_27571 =  [fourcy_00_name, (596000, 1129824), (602000, 1126024)]   
+    fourcy_00_27571 =  [fourcy_00_name, (596000, 1129824), (602000, 1125024)]   
     fourcys_27571.append(fourcy_00_27571)
 
 
